@@ -1,81 +1,190 @@
 <!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<style>
-		.myDiv {
-			width: 90%;
-			margin: auto;
-			text-align: justify;
-		}
-		</style>
-		<title>An introduction to my academic work in astronomy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>An introduction to my academic work in astronomy</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .myDiv {
+            width: 90%;
+            margin: auto;
+            text-align: justify;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+        .figure {
+            display: flex;
+            float: right;
+            flex-direction: column;
+            align-items: center; /* Center the caption below the image */
+            margin: 0;
+            max-width: 500px
+        }
 
-			<div class="topnav">
-			  <a class="active" href="index.html">Home</a>
-<!-- 			  <a href="#news">News</a>
-			  <a href="#contact">Contact</a>
-			  <a href="#about">About</a> -->
-			</div>
+        .responsive-img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 0px; /* Space between image and text */
+            margin-left: 40px;
+        }
 
-				 <!-- Five --> 
-					<section class="wrapper style1 align-center">
 
-						<figure>
-						  <img src="images/eso1620a.jpg" alt="Diagram of cosmic history" style="width:100%">
-						  <figcaption>Diagram of cosmic history. My focus is reionization. Credit: <a href="https://www.nao.ac.jp/en/">NAOJ</a> </figcaption>
-						</figure>
-						<div class="myDiv">
-							<h2>An Introduction to my academic work in astronomy</h2>
-							<p> The first luminous sources in the universe ionized and heated the majority of hydrogen in the intergalactic medium (IGM) in a process called reionization. A detailed description of how exactly reionization took place has yet to be formulated. In particular, current measurements and models of the morphology and timing of end of reionization are still at odds with each other. It is important to understand details of reionization because of its insight into the first sources of ionizing radiation in the universe and the subsequent regulation of galaxy formation (galaxies contain stars and planets like Earth!). It is a vital piece to understanding a nuanced question ubiquitously asked throughout human history: how did we get here? I intend to contribute to the forward progression of solutions addressing this question.</p>
+        .figure_left {
+            display: flex;
+            float: left;
+            flex-direction: column;
+            align-items: center; /* Center the caption below the image */
+            margin: 0;
+            max-width: 500px
+        }
+        .responsive-img_left {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 40px; /* Space between image and text */
+            margin-left: 0px;
+        }
 
-							<p>I received a B.S. in Astronomy & Physics at the University of Washington, Seattle in 2019 where I was an undergraduate research assistant for Professor Matthew McQuinn. I led a study on the thermal history of the IGM using advanced statistical methods and found that hydrogen reionization is complete while helium-II reionization is still ongoing around 2 billion years after the big bang. Read more about it <a href="matt.html">here</a>.</p>
-							<p> I joined a physics PhD program at the University of California, Riverside in 2019 where I am currently a graduate student researcher working with Professor Anson D’Aloisio. I work on radiative transfer simulations to test and build models of hydrogen reionization. The edges of ionized regions, which is the location between an ionized and neutral region, are called ionization fronts (I-fronts) but unfortunately it is challenging for simulations to model the small scale astrophysics of I-fronts while simultaneously accounting for large scale cosmological effects. Therefore, I have developed a detailed model of I-front fluorescence which can be applied to large cosmological simulations. Read more about it <a href="anson.html">here</a>. </p>
+        .responsive-img_gif {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 0px; /* Space between image and text */
+            margin-left: 40px;
+        }
 
-							<p>Recently, I have become more interested in the application of machine learning to cosmological simulations. I currently lead a machine learning based project to rapidly and reliably enhance low-resolution dark matter simulations to predict small-scale structure formation in large cosmological volumes. I employ a deep-learning model that decreases computational demand by orders of magnitude in comparison to standard methods while remaining statistically validated on test datasets.</p>
 
-						<h2>Why I am uniquely prepared for a data/research science role outside of academia </h2>
-							<p>I am eager to broaden the applicability of my skillset to the industry domain through mentorship and collaboration with experienced industry data scientists. While my industry-specific knowledge is limited, my strong analytic and computational skills developed through my PhD will uniquely allow me to contribute to rapid and effective solutions to real-world business problems. For example, there is common ground between my work optimizing astronomy versus industry big data analysis pipelines; feature engineering astrophysical versus user-experience models; and deep learning in cosmological simulations versus super-resolution imaging in industry. </p>
 
-						<!-- <p>I am excited to apply my strong analytic and computational skills developed through my PhD to address challenging business problems in various domains.</p> -->
+        .text-left {
+            margin: 0; /* Remove default margin for better alignment */
+        }
+        .caption {
+            margin-top: 8px; /* Space between image and caption */
+            text-align: center; /* Center the caption text */
+            font-style: italic; /* Optional: italicize caption text */
+            color: #555; /* Optional: change the color of the caption */
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-</p>						</div>
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/bayu-wilson-449897205/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="mailto:bwils033@ucr.edu" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://github.com/bayu-wilson" class="icon brands style2 fa-github"><span class="label">github</span></a></li>
-							</ul>
-							<p>&copy; Bayu J. Wilson. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
+        <!-- Navigation -->
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+        </div>
 
-			</div>
+        <!-- Main Content -->
+        <section class="wrapper style1 align-center">
+          <div class="myDiv">
+          <figure class="figure">
+            <img align="right"
+                 src="images/kansas_sunset.jpg"
+                  alt="Kansas Sunset with telescope"
+                  class="responsive-img">
+                  <figcaption class="caption">Figure 1. A Kansas sunset before a night of stargazing using my Celestron Nexstar 130SLT telescope in 2015. </figcaption>
+          </figure>
+        <h2 class="text-left">Astrophysics as a gateway to data science </h2>
+        <!-- <h3 class="text-left">Early academic career</h3> -->
+        <p>
+          Stargazing into the clear Kansas skies (Figure 1) throughout my childhood inspired me to pursue an academic career in astrophysics. My first step towards this goal was studying astrophysics at the University of Washington, Seattle (UW). I quickly realized that much of <b>modern astrophysics research is essentially applied data science </b>.
+         </p>
 
-		<!-- Scripts -->
-<!-- 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script> -->
+        <p>
+          At UW I worked with Professor Matthew McQuinn to study the large-scale evolution of the universe. This experience established a foundation for data science moving forward. I first acquired domain knowledge via literature reviews and advice from leading experts. Then I used this knowledge to inform an interesting and novel project goal. <b>I collected large datasets from an astronomical observatory, developed a pipeline in Python to process this data, and then applied advanced statistical methods to derive meaningful insights from the data</b>. From these insights we better constrained the thermal evolution of the universe in a way that has never been done before. I published this work in the peer-reviewed journal, Monthly Notices of the Royal Astronomical Society. Read my paper <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.2423W/abstract">here</a>.
+          <!-- and/or read a summary of my work at UW here. -->
+          </p>
 
-	</body>
+          <figure class="figure_left">
+            <img align="left"
+                 src="images/mock_image_website.png"
+                  alt="Mock"
+                  class="responsive-img_left">
+                  <figcaption class="caption">Figure 2. Mock image of the "end of reionization" signal assuming an observation for 5000 hours using an effective aperture of 4.5 meters (inspired by a future iteration of the Dragonfly Telephoto Array). We developed a simple image processing methodology to highlight this signal.</figcaption>
+          </figure>
+        <p>
+          Upon gradutating with a BSc in astrophysics from UW, I pursued a PhD in physics from the University of California, Riverside. During my PhD, I worked on two classes of projects that uniquely add to my data scientist skillset: (1) modeling emissions from cosmological phenomena and (2) artificial intelligence assisted super-resolution cosmological simulations. In project 1, <b>I implemented dimensionality reduction techniques and extensive validation testing to produce a reliable model that reduces computational cost by a factor of 10,000</b>. This model was then used to generate realistic mock images that inform the stakeholders (observational astronomers) on current and future observational prospects. We found that end of reionization (a pivotal moment in cosmic history that has never been directly detected) is likely detectable with a dedicated program. See figure 2 for an example mock image. This project resulted in 2 first-authored publications. Read these papers <a href="https://ui.adsabs.harvard.edu/search/filter_database_fq_database=NOT&filter_database_fq_database=((database%3Aastronomy%20OR%20database%3Aphysics)%20NOT%20database%3A%22earthscience%22)&filter_database_fq_database=database%3A%22physics%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(((database%3Aastronomy%20OR%20database%3Aphysics)%20NOT%20database%3A%22earthscience%22)%20NOT%20database%3A%22physics%22)&q=%20%20author%3A%22%5Ewilson%2CB%22%20%20%20abs%3A%22front%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">here</a>.
+          <!-- and/or read a summary of this project here. -->
+          </p>
+
+          <p>
+            In project 2 of my PhD, I moved towards the application of generative artificial intelligence (AI) to assist cosmological simulations. I led a deep learning based project to super-resolve 3-dimensional cosmological simulations to 8 times higher resolution over a billion years of cosmic evolution. For example, I show the time evolution of the low and high resolution training pairs that I created in figure 3 and 4 respectively. The enormous spatial dynamic range would allow simulations simultaneously model small scales (think small, faint galaxies) as well as the large scales (think rare sources like massive, bright galaxies). I used the <a href="https://www.globus.org/data-transfer">Globus data transfer tool</a> to move massive Tb-size cosmological simulation data files and then preprocessed these simulations in preparation for model training. Then <b>I trained a generative-adversarial DL model (styleGAN) written using Pytorch on GPU nodes of the Frontera supercomputer, the fastest academic supercomputer in the United States </b>. I monitored the training of the generator and discriminator using Tensorboard to ensure proper progress was being made. I decided to graduate before completing this project but I have made significant progress in preprocessing and early model training. I have trained other researchers that will complete this project in the near future.
+              </p>
+
+            <!-- <figure>
+              <img src="images/eso1620a.jpg" alt="Diagram of cosmic history" style="width:100%">
+              <figcaption>Diagram of cosmic history. My focus is reionization. Credit: <a href="https://www.nao.ac.jp/en/">NAOJ</a> </figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/HR_eul_cropped_infty.gif" alt="HR" class="responsive-img_gif" style="width:35%">
+                <img src="images/HR_eul_cropped_infty.gif" alt="HR" class="responsive-img_gif" style="width:35%">
+                <figcaption>stxdcfygvhbjknlhbgvfcdxgchvjbknlbhgvcf</figcaption>
+            </figure> -->
+            <div class="container">
+              <figure class="figure">
+                <img src="images/LR_eul_cropped_infty.gif" alt="LR" class="responsive-img">
+                      <figcaption class="caption">Figure 3. Cosmic evolution in a low resolution (N=170^3 particles, L=100 Mpc) simulation over 1 billion years. These simulations were run on the Frontera supercomputer. </figcaption>
+              </figure>
+              <figure class="figure_left">
+                  <img src="images/HR_eul_cropped_infty.gif" alt="HR" class="responsive-img_left">
+                  <figcaption class="caption">Figure 4. Cosmic evolution in a high resolution (N=1360^3 particles, L=100 Mpc) simulation given the same initial conditions as in figure 3. Together these pairs are used to train the super-resolution model. </figcaption>
+              </figure>
+
+            </div>
+
+
+            <h2 class="text-left">Why transition into industry?</h2>
+            <p> The main reason I am transitioning into industry is to do work that has a tangible real-world impact. Astrophysics research in academia is slow and has little direct impact on humanity. I am interested in working on faster-paced projects (taking months, not years to complete) with a company that directly helps people. I have done a variety of personal projects that align with this vision that I would be interested in pursuing further. For example, I have done projects <a href="https://github.com/bayu-wilson/Brain_Tumor_GAN">augmenting medical image datasets with generative AI</a>, <a href="https://github.com/bayu-wilson/MoveNet_project">tracking human movements with computer vision</a> and <a href="https://github.com/bayu-wilson/bayesian_marketing_analysis">marketing decision analysis using Bayesian statistics</a>. Through these projects, I have generalized the data science skills developed throughout my PhD for tackling real-world business problems.
+              </p>
+
+            <!-- <h2>Why I Am Uniquely Prepared for a Data/Research Science Role Outside of Academia</h2> -->
+              <!-- <p>I am eager to apply my analytical and computational skills developed through my PhD to industry. My experience in optimizing big data analysis pipelines, feature engineering, and deep learning in cosmological simulations provides a strong foundation for tackling real-world business problems. My background allows me to contribute to innovative solutions and leverage my skills in new domains.</p> -->
+
+
+
+            <!-- <figure>
+                <img src="images/eso1620a.jpg" alt="Diagram of cosmic history" style="width:100%">
+                <figcaption>asdf. Diagram of cosmic history. My focus is reionization. Credit: <a href="https://www.nao.ac.jp/en/">NAOJ</a></figcaption>
+            </figure> -->
+
+                <!-- <h2>An Introduction to My Academic Work in Astronomy</h2>
+                <p>The first luminous sources in the universe ionized and heated the majority of hydrogen in the intergalactic medium (IGM) in a process called reionization. A detailed description of how exactly reionization took place has yet to be formulated. In particular, current measurements and models of the morphology and timing of the end of reionization are still at odds with each other. Understanding reionization is crucial for insights into the first sources of ionizing radiation in the universe and the subsequent regulation of galaxy formation.</p>
+
+                <p>I received a B.S. in Astronomy & Physics from the University of Washington, Seattle in 2019, where I was an undergraduate research assistant for Professor Matthew McQuinn. I led a study on the thermal history of the IGM using advanced statistical methods and found that hydrogen reionization is complete while helium-II reionization is still ongoing around 2 billion years after the big bang. Read more about it <a href="matt.html">here</a>.</p>
+
+                <p>Currently, I am pursuing a PhD in Physics at the University of California, Riverside, working with Professor Anson D’Aloisio. I focus on radiative transfer simulations to test and build models of hydrogen reionization. I have developed a detailed model of I-front fluorescence for large cosmological simulations. Read more about it <a href="anson.html">here</a>.</p>
+
+                <p>Recently, I have become interested in applying machine learning to cosmological simulations. I lead a project to enhance low-resolution dark matter simulations to predict small-scale structure formation in large cosmological volumes. This deep-learning model significantly reduces computational demand compared to standard methods while remaining statistically validated on test datasets.</p>
+
+                <h2>Why I Am Uniquely Prepared for a Data/Research Science Role Outside of Academia</h2>
+                <p>I am eager to apply my analytical and computational skills developed through my PhD to industry. My experience in optimizing big data analysis pipelines, feature engineering, and deep learning in cosmological simulations provides a strong foundation for tackling real-world business problems. My background allows me to contribute to innovative solutions and leverage my skills in new domains.</p> -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://www.linkedin.com/in/bayu-wilson-449897205/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:bayu.j.wilson#gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+                    <li><a href="https://github.com/bayu-wilson" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+                <p>&copy; Bayu J. Wilson. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
 </html>
