@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<style>
+			.myDiv {
+				width: 90%;
+				margin: auto;
+				text-align: justify;
+			}
+      .container {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          justify-content: space-between;
+          margin: 20px 0;
+      }
+
+      .figure {
+          display: flex;
+          float: right;
+          flex-direction: column;
+          align-items: center; /* Center the caption below the image */
+          margin: 0;
+          max-width: 500px
+      }
+
+      .responsive-img {
+          width: 100%;
+          height: auto; /* Maintain aspect ratio */
+          margin-right: 0px; /* Space between image and text */
+          margin-left: 20px;
+      }
+
+
+      .figure_left {
+          display: flex;
+          float: left;
+          flex-direction: column;
+          align-items: center; /* Center the caption below the image */
+          margin: 0;
+          max-width: 500px
+      }
+      .responsive-img_left {
+          width: 100%;
+          height: auto; /* Maintain aspect ratio */
+          margin-right: 40px; /* Space between image and text */
+          margin-left: 0px;
+      }
+
+      .responsive-img_gif {
+          width: 100%;
+          height: auto; /* Maintain aspect ratio */
+          margin-right: 0px; /* Space between image and text */
+          margin-left: 40px;
+      }
+
+      .text-left {
+          margin: 0; /* Remove default margin for better alignment */
+      }
+      .caption {
+          margin-top: 10px; /* Space between image and caption */
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 10px;
+          text-align: justify; /* Center the caption text */
+          font-style: italic; /* Optional: italicize caption text */
+          color: #555; /* Optional: change the color of the caption */
+      }
+      .text {
+          clear: both; /* Ensure the paragraph clears the figure and floats */
+          margin-top: 30px; /* Optional: add space between the figure and paragraph */
+          text-align: right; /* Align the text to the right side of the page */
+      }
+		</style>
+		<!-- <title>Lyman Beta</title> -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+    <div class="topnav">
+      <!-- <a class="active" href="index.html">Home</a> -->
+      <a class="active" href="projects_overview.html">Previous</a>
+    </div>
+
+    <section class="wrapper style1 align-left" id="first">
+      <div class="inner">
+        <!-- <h2>Items</h2> -->
+        <center>
+          <h1>Academic research projects</h1>
+        </center>
+              </div>
+            </section>
+    <!-- <section class="wrapper style1 align-center"> -->
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+      <div class="myDiv">
+        <figure class="figure">
+          <img align="right"
+               src="images/quasar.jpeg"
+                alt="Mock"
+                class="responsive-img">
+                <figcaption class="caption">Artists rendition of a super-massive black hole brightly emitting light from its accretion disk. This is called a quasar. Astronomers can use distant quasars as a backlight and then study the "shadows" cast from intergalatic gas clouds to study cosmic history! </figcaption>
+        </figure>
+      <h3>Statistical analysis of quasar spectra at the University of Washington (UW)</h3>
+      <p>
+        At UW I worked with Professor Matthew McQuinn to study the large-scale evolution of the universe. This experience established a foundation for data science moving forward. I first acquired domain knowledge via literature reviews and advice from leading experts. Then I used this knowledge to inform an interesting and novel project goal. <b>I collected large datasets from an astronomical observatory, developed a pipeline in Python to process this data, and then applied advanced statistical methods to derive meaningful insights from the data</b>. From these insights we better constrained the thermal evolution of the universe in a way that has never been done before. I published this work in the peer-reviewed journal, Monthly Notices of the Royal Astronomical Society. Read my paper <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.2423W/abstract">here</a>.
+        <!-- and/or read a summary of my work at UW here. -->
+        </p>
+
+
+
+        <h3 class="text"> Modeling Emissions from Cosmological Phenomena (I-fronts), UCR</h3>
+        <figure class="figure_left">
+          <img align="left"
+               src="images/mock_image_website.png"
+                alt="Mock"
+                class="responsive-img_left">
+                <figcaption class="caption">Figure 2. Mock image of the "end of reionization" signal assuming an observation for 5000 hours using an effective aperture of 4.5 meters (inspired by a future iteration of the Dragonfly Telephoto Array). We developed a simple image processing methodology to highlight this signal.</figcaption>
+        </figure>
+      <p>
+        Upon gradutating with a BSc in astrophysics from UW, I pursued a PhD in physics from the University of California, Riverside. During my PhD, I worked on two classes of projects that uniquely add to my data scientist skillset: (1) modeling emissions from cosmological phenomena and (2) artificial intelligence assisted super-resolution cosmological simulations. In project 1, <b>I implemented dimensionality reduction techniques and extensive validation testing to produce a reliable model that reduces computational cost by a factor of 10,000</b>. This model was then used to generate realistic mock images that inform the stakeholders (observational astronomers) on current and future observational prospects. We found that end of reionization (a pivotal moment in cosmic history that has never been directly detected) is likely detectable with a dedicated program. See figure 2 for an example mock image. This project resulted in 2 first-authored publications. Read these papers <a href="https://ui.adsabs.harvard.edu/search/filter_database_fq_database=NOT&filter_database_fq_database=((database%3Aastronomy%20OR%20database%3Aphysics)%20NOT%20database%3A%22earthscience%22)&filter_database_fq_database=database%3A%22physics%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(((database%3Aastronomy%20OR%20database%3Aphysics)%20NOT%20database%3A%22earthscience%22)%20NOT%20database%3A%22physics%22)&q=%20%20author%3A%22%5Ewilson%2CB%22%20%20%20abs%3A%22front%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">here</a>.
+        <!-- and/or read a summary of this project here. -->
+        </p>
+
+
+        <h3 class="text"> </h3>
+        <center>
+        <h3> Artificial Intelligence Assisted Cosmological Simulations, UCR </h3>
+        </center>
+        <p>
+          In project 2 of my PhD, I moved towards the application of generative artificial intelligence (AI) to assist cosmological simulations. I led a deep learning based project to super-resolve 3-dimensional cosmological simulations to 8 times higher resolution over a billion years of cosmic evolution. For example, I show the time evolution of the low and high resolution training pairs that I created in figure 3 and 4 respectively. The enormous spatial dynamic range would allow simulations simultaneously model small scales (think small, faint galaxies) as well as the large scales (think rare sources like massive, bright galaxies). I used the <a href="https://www.globus.org/data-transfer">Globus data transfer tool</a> to move massive Tb-size cosmological simulation data files and then preprocessed these simulations in preparation for model training. Then <b>I trained a generative-adversarial DL model (styleGAN) written using Pytorch on GPU nodes of the Frontera supercomputer, the fastest academic supercomputer in the United States </b>. I monitored the training of the generator and discriminator using Tensorboard to ensure proper progress was being made. I decided to graduate before completing this project but I have made significant progress in preprocessing and early model training. I have trained other researchers that will complete this project in the near future.
+            </p>
+            </div>
+
+    <div class="container">
+            <figure class="figure">
+              <img src="images/LR_eul_cropped_infty.gif" alt="LR" class="responsive-img">
+                    <figcaption class="caption">Figure 3. Cosmic evolution in a low resolution (N=170^3 particles, L=100 Mpc) simulation over 1 billion years. These simulations were run on the Frontera supercomputer. </figcaption>
+            </figure>
+            <figure class="figure_left">
+                <img src="images/HR_eul_cropped_infty.gif" alt="HR" class="responsive-img_left">
+                <figcaption class="caption">Figure 4. Cosmic evolution in a high resolution (N=1360^3 particles, L=100 Mpc) simulation given the same initial conditions as in figure 3. Together these pairs are used to train the super-resolution model. </figcaption>
+            </figure>
+
+          </div>
+
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/bayu-wilson-449897205/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="mailto:bayu.j.wilson@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="https://github.com/bayu-wilson" class="icon brands style2 fa-github"><span class="label">github</span></a></li>
+							<p>&copy; Bayu J. Wilson. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+<!-- 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script> -->
+
+	</body>
+</html>
