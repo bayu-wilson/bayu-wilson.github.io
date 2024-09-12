@@ -71,6 +71,20 @@
             font-style: italic; /* Optional: italicize caption text */
             color: #555; /* Optional: change the color of the caption */
         }
+        .topnav {
+          display: flex;
+          justify-content: left; /* Center the button horizontally */
+        }
+
+        .topnav a {
+          display: inline-block;
+          padding: 10px 20px; /* Adjust the padding for size */
+          margin: 0 15px; /* Space between buttons, if you have more */
+          font-size: 16px; /* Adjust text size */
+          color: black; /* Text color */
+          transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
     </style>
 </head>
 <body class="is-preload">
@@ -103,9 +117,9 @@
 
             <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
               <div class="content">
-                <h2> Astrophysics research </h2>
-                <p> Through my academic career at the University of Washington, Seattle (UW) and the University of California, Riveride (UCR), I have led multiple research projects that have laid a strong foundation for a career in data science. </p>
-                <p> The GIF on the right shows the evolution of a cosmological density field over billions of years. This is part of the dataset created to train a "super-resolution" generative AI model.</p>
+                <h2> Data science in astrophysics </h2>
+                <p style="text-align: justify;"> Through my academic career at the University of Washington, Seattle (UW) and the University of California, Riveride (UCR), I have led multiple research projects that have laid a strong foundation for a career in data science. </p>
+                <p style="text-align: justify;"> For example, the GIF on the right shows the cosmic evolution of intergalactic gas over billions of years. This is part of the dataset I created to train a "super-resolution" generative AI model.</p>
                 <ul class=  "actions stacked">
                   <li><a href="academic_research.html" class="button">Learn More</a></li>
                 </ul>
@@ -118,8 +132,8 @@
             <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
   						<div class="content">
   							<h2> Personal projects </h2>
-  							<p> These personal projects fall into one or more of the following categories: (1) Generalizing data science skills learned in academia to various new problems applicable over a variety of business domains (2) Addressing weaknesses that weren't develpoed fully during my PhD (3) Simply because it is fun and interesting to me. </p>
-                <p> The GIF on the left shows the training progress of the brain tumor model that synthesizes medical images for dataset augmentation. </p>
+  							<p style="text-align: justify;"> I have done various personal projects that generally fall into one or more of the following categories: (1) Generalizing data science skills learned in astrophysics to new problems applicable over a variety of business domains (2) Addressing weaknesses that weren't developed fully during my PhD (3) Simply because it is fun and interesting to me. </p>
+                <p style="text-align: justify;"> For example, the GIF on the left shows the training progress of a generative AI model that synthesizes images to augment medical datasets. </p>
   							<ul class="actions stacked">
   								<li><a href="personal_projects.html" class="button">Learn More</a></li>
   							</ul>

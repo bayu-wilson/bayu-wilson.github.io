@@ -15,7 +15,7 @@
       .container {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 40px;
           justify-content: space-between;
           margin: 20px 0;
       }
@@ -43,20 +43,22 @@
           flex-direction: column;
           align-items: center; /* Center the caption below the image */
           margin: 0;
-          max-width: 500px
+          max-width: 300px
       }
       .responsive-img_left {
           width: 100%;
-          height: auto; /* Maintain aspect ratio */
-          margin-right: 40px; /* Space between image and text */
-          margin-left: 0px;
+          height: auto;
+          /* Maintain aspect ratio */
+          /* margin-right: 20px;  */
+          /* Space between image and text */
+          /* margin-left: 0px; */
       }
 
       .responsive-img_gif {
           width: 100%;
           height: auto; /* Maintain aspect ratio */
-          margin-right: 0px; /* Space between image and text */
-          margin-left: 40px;
+          /* margin-right: 0px; *//* Space between image and text */
+          /* margin-left: 40px; */
       }
 
       .text-left {
@@ -64,9 +66,9 @@
       }
       .caption {
           margin-top: 10px; /* Space between image and caption */
-          margin-left: 20px;
-          margin-right: 20px;
-          margin-bottom: 10px;
+          margin-left: 25px;
+          margin-right: 25px;
+          /* margin-bottom: 10px; */
           text-align: justify; /* Center the caption text */
           font-style: italic; /* Optional: italicize caption text */
           color: #555; /* Optional: change the color of the caption */
@@ -76,6 +78,21 @@
           margin-top: 30px; /* Optional: add space between the figure and paragraph */
           text-align: right; /* Align the text to the right side of the page */
       }
+      .topnav {
+        display: flex;
+        justify-content: left; /* Center the button horizontally */
+      }
+
+      .topnav a {
+        display: inline-block;
+        padding: 10px 20px; /* Adjust the padding for size */
+        margin: 0 15px; /* Space between buttons, if you have more */
+        font-size: 16px; /* Adjust text size */
+        color: black; /* Text color */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+      }
+
+
 		</style>
 		<!-- <title>Lyman Beta</title> -->
 		<meta charset="utf-8" />
@@ -109,16 +126,38 @@
           <img align="right"
                src="images/kansas_sunset.jpg"
                 alt=""
-                class="responsive-img">
+                class="responsive-img"
+                style="margin-left: 20px;">
                 <figcaption class="caption"> Figure 1. A Kansas sunset before a night of stargazing using my Celestron Nexstar 130SLT telescope in 2015. </figcaption>
         </figure>
-			<p> Stargazing into the clear Kansas skies throughout my childhood inspired my interest in astrophysics. One of my favorite memories growing up was creating an astronomy club at my high school and going on stargazing adventures with my friends. I lived in a suburb but only a short drive away from the city lights there would be vast open prairies with crystal clear night skies. Figure 1 shows a picture of the Kansas sunset taken by one of my friends before a night of stargazing. </p>
+			<p> Stargazing into the clear Kansas skies throughout my childhood inspired my interest in astrophysics. One of my favorite memories growing up was creating an astronomy club at my high school and going on stargazing adventures with my friends. I lived in a suburb but only a short drive away from the city lights there would be vast open prairies with crystal clear night skies. Figure 1 shows a Kansas sunset before a night of stargazing. </p>
 
-      <p>  I decided to to pursue an academic career in astrophysics starting with going to the University of Washington, Seattle from 2015-2019. By my first week of school, I was already doing research thanks to the <a href="https://depts.washington.edu/premap/">Pre-Major Astronomy Program</a>. I quickly realized that much of <b>modern astrophysics research is essentially applied data science</b>. For example, my projects would require a literature review (business understanding), advanced statistical techniques to summarize data (exploratory data analysis) and paper-quality data visualization using Python. I enjoyed leveraging these skills/tools to address exciting questions about the universe.</p>
+      <p>  I decided to to pursue an academic career in astrophysics starting with my BSc at the University of Washington, Seattle from 2015-2019. By my first week of school, I was already doing research thanks to the <a href="https://depts.washington.edu/premap/">Pre-Major Astronomy Program</a>. I quickly discovered that much of <b>modern astrophysics research is essentially applied data science</b>. For example, my projects would require a literature review (business understanding), advanced statistical techniques to summarize data (exploratory data analysis) and paper-quality data visualization using Python. I enjoyed leveraging these skills/tools to address exciting questions about the universe. Read more about by undergraduate work  <a href="academic_research.html">here</a>.
+      </p>
 
-      <p> I enjoyed it so much that I decided to get my PhD in astrophysics at the University of California, Riverside (2019-2024). It was difficult at first. </p>
+      <p> I enjoyed it so much that I decided to do a PhD in astrophysics at the University of California, Riverside (2019-2024). Broadly, I worked to find simple, inexpensive and reliable solutions to complex astronomical problems. This was mainly done reducing the dimensionality of problems, leveraging deep/machine learning models, and designing experiments to test these solutions. I found it exciting to see how different data science tools and processes would derive meaningful insights from the datasets. As I grew as a researcher, <b>I began to realize that I am more interested in the data science aspect of this work rather than the astronomical application. </b>
+      </p>
 
-      <p> Discuss how, on top of that, I went through cardiac arrest. It made me re-think my career trajectory. I actually became a farmer for a bit. Main conclusion is that I want to do work that has a real-world impact (like feeding people, sustainable practices, and community building). I decided to finish what I started (my PhD) but I would actively prepared myself for a transition into industry. </p>
+      <figure class="figure_left">
+        <img align="left"
+             src="images/bayu_farms.png"
+              alt="Mock"
+              class="responsive-img_left"
+              style="margin-right: 20px;">
+              <figcaption class="caption">Figure 2. Preparing fruits and vegetables grown by my team to be sold at the <a href="https://www.kcfarmschool.org/">KC Farm School</a> market.</figcaption>
+      </figure>
+
+
+      <p> My feelings towards data science, and away from academia, was further augmented when I underwent a health scare in 2020. I randomly went into an out-of-hospical cardiac arrest, <a href="https://cpr.heart.org/en/resources/cpr-facts-and-stats">which has a survival rate of only ~9%</a>, but survived essentially unscathed. This stroke of luck was made possible by numerous people that treated, supported, and literally saved me. <b>These people have inspired me to re-think my career trajectory into a sector that has a direct, real-world impact <i>on people</i> today such as through agriculture, medicine, and community building</b>. For example, I briefly worked as a farm-hand at the <a href="https://www.kcfarmschool.org/">KC Farm School</a> during my recovery (see figure 2), done personal projects augmenting medical datasets and tracking human movement (see <a href="personal_projects.html">personal projects</a>), and have led major community-based latin music and dance programming with the <a href="https://www.instagram.com/theriversidesalsacollective/">Riverside Salsa Collective</a>. After my health scare, I returned to UCR to complete my PhD, with a renewed focus on developing the data science skills necessary for a career in a sector that has a direct, real-world impact on people. Read more my data science experiences in astrophysics <a href="academic_research.html">here</a>.
+
+      <p>  <b>I recently earned my Ph.D. in Physics from the University of California, Riverside (September 2024) and am now actively seeking a data scientist role. </b>
+        </p>
+
+        <!-- Read more on about the work done during my PhD  -->
+
+
+
+        <!-- Discuss how, on top of that, I went through cardiac arrest. It made me re-think my career trajectory. I actually became a farmer for a bit. Main conclusion is that I want to do work that has a real-world impact (like feeding people, sustainable practices, and community building). I decided to finish what I started (my PhD) but I would actively prepared myself for a transition into industry. </p> -->
 
 
 				<!-- Footer -->
@@ -142,6 +181,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script> -->
+      <!-- This jarring experience
+      The amazing work by the medical staff
+      This life-changing experience made me realize that
+      This experience made me completely re-think my career trajectory. Primarily, the
+        simplifying complex astronomical problems and implementing
+         and implementing quantifiable, data-driven solutions
+        Here I found that the process of simplifying complex astronomical datasets and implementing quantifiable, data-driven solutions to was interesting to me. I was beginning to realize that I enjoy data science process more than the science itself.
+        The most interesting thing -->
 
 	</body>
 </html>
